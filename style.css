@@ -1,0 +1,13 @@
+#container {
+    border: 2px solid black;
+    height: 288px;
+    width: 304px;
+}
+
+.grid {
+    border: 2px solid black;
+    display: inline-flex;
+    height: 15px;
+    width: 15px;
+    margin-bottom: -5px;
+}

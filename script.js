@@ -1,6 +1,7 @@
-// Create 16 squares on a grid
+// Create a 16x16 div grid
 
-document.getElementById("container").createElement(div)
-
-document.getElementsByClassName('grid').textContent = "Hey";
-
+for (i=0;i<256;i++) {
+let box = document.createElement("div");
+document.getElementById("container").appendChild(box); 
+box.classList.add("grid");
+}
