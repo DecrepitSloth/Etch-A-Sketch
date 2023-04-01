@@ -14,7 +14,7 @@ let input = 0;
 
 function gridSelect() {
     remove();
-    let y = prompt("Select how many grids per side you want.", input);
+    let y = prompt("Select how many squares per side you want.", input);
     total = y * y;
     input = y;
         for (i=0; i<total; i++) {
@@ -27,7 +27,7 @@ function gridSelect() {
         }
 
         // squares turn black when hovering
-        
+
         let squares = document.getElementsByClassName('grid');
         for (const square of squares) {
                 square.addEventListener("mouseover", function onHover() {
