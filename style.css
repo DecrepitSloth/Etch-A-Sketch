@@ -10,3 +10,9 @@
     border: 1px solid black;
     flex-grow: 1;
 }
+
+button {
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+}
