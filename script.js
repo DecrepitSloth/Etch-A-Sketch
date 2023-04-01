@@ -4,6 +4,11 @@ function create() {
 let box = document.createElement("div");
 document.getElementById("container").appendChild(box); 
 box.classList.add("grid");
+
+perc = Math.round((960/boot) - 2);
+document.getElementsByClassName("grid");
+box.style.flexBasis = perc + "px";
+
 box.addEventListener("mouseover", func)
     function func() {
         box.setAttribute("style", "background-color: black;")
@@ -14,10 +19,13 @@ box.addEventListener("mouseover", func)
 
 document.getElementById("size").addEventListener("click", gridSelect);
 
+let boot = 0;
+
 function gridSelect() {
     remove();
-    let y = prompt("Select how many grids per side you want.");
+    let y = prompt("Select how many grids per side you want.", boot);
     total = y * y;
+    boot = y;
     for (i=0; i<total; i++) {
         create(); 
     }   
