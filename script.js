@@ -1,4 +1,4 @@
-//Create divs and add event listener
+//Create divs
 
 function create() {
 let box = document.createElement("div");
@@ -24,6 +24,15 @@ function gridSelect() {
     let percentage = document.getElementById("container").children;
         for (i = 0; i < percentage.length; i++) {
         percentage[i].style.width = perc + "px";
+        }
+
+        // squares turn black when hovering
+        
+        let squares = document.getElementsByClassName('grid');
+        for (const square of squares) {
+                square.addEventListener("mouseover", function onHover() {
+                    square.style.backgroundColor = "black";
+            })
         }
 }
 
