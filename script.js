@@ -17,9 +17,14 @@ function gridSelect() {
     let y = prompt("Select how many squares per side you want.", input);
     total = y * y;
     input = y;
+    if (input > 100) {
+        alert("Too large, try again!")
+        return;
+    } else {
         for (i=0; i<total; i++) {
         create(); 
         }
+    }
     perc = (960/input) - 2;
     let percentage = document.getElementById("container").children;
         for (i = 0; i < percentage.length; i++) {
