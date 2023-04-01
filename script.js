@@ -6,7 +6,7 @@ document.getElementById("container").appendChild(box);
 box.classList.add("grid");
 }
 
-// Create a 16x16 div grid
+// Create a grid that reacts to the number you input in the prompt
 
 document.getElementById("size").addEventListener("click", gridSelect);
 
