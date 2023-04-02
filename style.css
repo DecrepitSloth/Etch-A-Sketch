@@ -1,14 +1,16 @@
 #container {
     border: 2px solid black;
-    height: 960px;
+    height: 953px;
     width: 960px;
     display: flex;
     flex-flow: row wrap;
+    margin: 2px;
 }
 
 .grid {
     border: 1px solid black;
     flex-grow: 1;
+    background-color: white;
 }
 
 button {
@@ -21,4 +23,6 @@ button {
 #content {
     display: flex;
     justify-content: space-evenly;
+    margin: -10px;
+    background-color: gray;
 }
